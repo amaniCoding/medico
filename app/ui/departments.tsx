@@ -1,0 +1,80 @@
+'use client'
+import Image from "next/image"
+import { sideBarContent } from "../libs/placeholder-data"
+import { useEffect, useRef, useState } from "react"
+import styles from '../custome-styles/side-bar.module.css'
+
+export default function Departments() {
+  const [activeIndex, setActiveIndex] = useState<number>(0);
+  const opacity = useRef<HTMLDivElement>(null);
+
+  const handelClick = (i: number) => {
+    setActiveIndex(i);
+    console.log(i);
+  }
+
+  useEffect(() => {
+    opacity.current?.classList.add(styles.myAnimation);
+    opacity.current?.addEventListener("animationend", () => {
+      opacity.current?.classList.remove(styles.myAnimation);
+    });
+    opacity.current?.classList.add(styles.myAnimation);
+
+    return () => opacity.current?.removeEventListener("animationend", () => {
+      opacity.current?.classList.remove(styles.myAnimation);
+    })
+  }, [activeIndex])
+  return (
+    <section className="py-6">
+      <div className="max-w-[1150px] mx-auto">
+        <p className="text-3xl font-bold pb-3 text-center uppercase">Departments</p>
+        <div className="flex items-center justify-center">
+          <p className="border-b-[4px] border-b-[#3FBBC0] w-20 text-center"></p>
+        </div>
+        <p className="my-4 text-center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <div className="grid grid-cols-12 gap-4">
+          <div className="md:col-span-5 col-span-12">
+            <div className="p-2">
+              {
+                sideBarContent.map((el, i) => {
+                  return (
+                    <div className={`felx flex-col space-y-2 ${activeIndex !== i ? 'border-l-4 border-l-white hover:border-l-gray-300' : ''} hover:bg-slate-50 group cursor-pointer p-3 ${activeIndex === i ? 'bg-[#d1eeef] border-l-4 border-l-[#3FBBC0]' : ''}`} key={i} onClick={() => { handelClick(i) }}>
+                      <p className={`font-bold text-lg text-[#495057] group-hover:text-[#3FBBC0] ${activeIndex === i ? 'text-[#3FBBC0]' : 'text-black'} `}>{el.name}</p>
+                      <p>{el.subname}</p>
+                    </div>
+                  )
+                })
+              }
+            </div>
+          </div>
+          <div className="md:col-span-7 col-span-12">
+            <div className="p-2">
+              {
+                <div ref={opacity}>
+                  <div className="felx flex-col space-y-2">
+                    <p className="font-bold text-lg text-[#3FBBC0]">{sideBarContent[activeIndex].name}</p>
+                    <div className="grid grid-cols-12 gap-3">
+                      <div className="col-span-5">
+                        <Image
+                          src={`/${sideBarContent[activeIndex].subCont.photo}`}
+                          width={0}
+                          height={0}
+                          sizes="100vh"
+                          alt="Amanuel Ferede Fullstack web developer"
+                          className="w-full h-full"
+                        />
+                      </div>
+                      <div className="md:col-span-7 col-span-12">
+                        <p className="italic text-[#777777] text-lg">{sideBarContent[activeIndex].subCont.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

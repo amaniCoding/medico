@@ -1,0 +1,9 @@
+@keyframes sideBar {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.myAnimation {
+  animation-name: sideBar;
+  animation-duration: 4s;
+}
