@@ -14,16 +14,15 @@ import NavBar from "./ui/nav-bar";
 import Pricing from "./ui/pricing";
 import { Services } from "./ui/services";
 import Testimonials from "./ui/testimonials";
-import TopNavBar from "./ui/top-nav-bar";
 import FAQ from "./ui/faq";
 import Contact from "./ui/contact";
 import Footer from "./ui/footer";
 import Footer2 from "./ui/footer2";
+import BackToTop from "./ui/backtotop";
 
 export default function Home() {
   return (
     <>
-    <TopNavBar/>
     <NavBar/>
     <Caroucel/>
     <Menu/>
@@ -42,6 +41,7 @@ export default function Home() {
     <Contact/>
     <Footer/>
     <Footer2/>
+    <BackToTop/>
     </>
   );
 }

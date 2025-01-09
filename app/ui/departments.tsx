@@ -1,11 +1,13 @@
 'use client'
 import Image from "next/image"
-import { sideBarContent } from "../libs/placeholder-data"
+import { departments } from "../libs/placeholder-data"
 import { useEffect, useRef, useState } from "react"
 import styles from '../custome-styles/side-bar.module.css'
+import { Department } from "../types/types"
 
 export default function Departments() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
+  const [department, setDepartment] = useState<Department[]>(departments)
   const opacity = useRef<HTMLDivElement>(null);
 
   const handelClick = (i: number) => {
@@ -36,11 +38,11 @@ export default function Departments() {
           <div className="md:col-span-5 col-span-12">
             <div className="p-2">
               {
-                sideBarContent.map((el, i) => {
+                department.map((el, i) => {
                   return (
                     <div className={`felx flex-col space-y-2 ${activeIndex !== i ? 'border-l-4 border-l-white hover:border-l-gray-300' : ''} hover:bg-slate-50 group cursor-pointer p-3 ${activeIndex === i ? 'bg-[#d1eeef] border-l-4 border-l-[#3FBBC0]' : ''}`} key={i} onClick={() => { handelClick(i) }}>
                       <p className={`font-bold text-lg text-[#495057] group-hover:text-[#3FBBC0] ${activeIndex === i ? 'text-[#3FBBC0]' : 'text-black'} `}>{el.name}</p>
-                      <p>{el.subname}</p>
+                      <p>{el.subName}</p>
                     </div>
                   )
                 })
@@ -52,11 +54,11 @@ export default function Departments() {
               {
                 <div ref={opacity}>
                   <div className="felx flex-col space-y-2">
-                    <p className="font-bold text-lg text-[#3FBBC0]">{sideBarContent[activeIndex].name}</p>
+                    <p className="font-bold text-lg text-[#3FBBC0]">{department[activeIndex].name}</p>
                     <div className="grid grid-cols-12 gap-3">
                       <div className="col-span-5">
                         <Image
-                          src={`/${sideBarContent[activeIndex].subCont.photo}`}
+                          src={`/${department[activeIndex].subCat.photo}`}
                           width={0}
                           height={0}
                           sizes="100vh"
@@ -65,7 +67,7 @@ export default function Departments() {
                         />
                       </div>
                       <div className="md:col-span-7 col-span-12">
-                        <p className="italic text-[#777777] text-lg">{sideBarContent[activeIndex].subCont.desc}</p>
+                        <p className="italic text-[#777777] text-lg">{department[activeIndex].subCat.desc}</p>
                       </div>
                     </div>
                   </div>

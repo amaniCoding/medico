@@ -14,11 +14,11 @@ export default function Pricing() {
               <p className="text-center">Free</p>
             </div>
             <div className="py-4">
-              <p className="mb-4 text-center"> $0 / month</p>
+              <p className="mb-4 text-center"> <sup className="text-lg font-bold text-[#3FBBC0]">$</sup><span className="font-bold text-4xl text-[#3FBBC0]">0</span> <span className="text-[#BABABA] text-lg">/ month</span></p>
               <p className="mb-4 text-center">Aida dere</p>
               <p className="mb-4 text-center">Nec feugiat nisl</p>
               <p className="mb-4 text-center">Nulla at volutpat dola</p>
-              <p className="mb-4 text-center line-through">Pharetra massa</p>
+              <p className="mb-4 text-center">Pharetra massa</p>
               <p className="mb-4 text-center line-through text-[#cccccc]">Massa ultricies mi</p>
             </div>
             <div className="h-[75] bg-[#F8F8F8] flex items-center justify-center">
@@ -30,7 +30,7 @@ export default function Pricing() {
               <p className="text-center">Business</p>
             </div>
             <div className="py-4">
-              <p className="mb-4 text-center"> $0 / month</p>
+              <p className="mb-4 text-center"> <sup className="text-lg font-bold text-[#3FBBC0]">$</sup><span className="font-bold text-4xl text-[#3FBBC0]">19</span> <span className="text-[#BABABA] text-lg">/ month</span></p>
               <p className="mb-4 text-center">Aida dere</p>
               <p className="mb-4 text-center">Nec feugiat nisl</p>
               <p className="mb-4 text-center">Nulla at volutpat dola</p>
@@ -46,12 +46,12 @@ export default function Pricing() {
               <p className="text-center text-white">Developer</p>
             </div>
             <div className="py-4">
-              <p className="mb-4 text-center"> $0 / month</p>
+              <p className="mb-4 text-center"> <sup className="text-lg font-bold text-[#3FBBC0]">$</sup><span className="font-bold text-4xl text-[#3FBBC0]">29</span> <span className="text-[#BABABA] text-lg">/ month</span></p>
               <p className="mb-4 text-center">Aida dere</p>
               <p className="mb-4 text-center">Nec feugiat nisl</p>
               <p className="mb-4 text-center">Nulla at volutpat dola</p>
               <p className="mb-4 text-center">Pharetra massa</p>
-              <p className="mb-4 text-center">Massa ultricies mi</p>
+              <p className="mb-4 text-center line-through text-[#cccccc]">Massa ultricies mi</p>
             </div>
             <div className="h-[75] bg-[#F8F8F8] flex items-center justify-center">
               <button className="px-8 py-2 font-bold bg bg-[#3FBBC0] text-center text-white rounded-md">Buy Now</button>
@@ -62,12 +62,12 @@ export default function Pricing() {
               <p className="text-center">Ultimate</p>
             </div>
             <div className="py-4">
-              <p className="mb-4 text-center"> $0 / month</p>
+              <p className="mb-4 text-center"> <sup className="text-lg font-bold text-[#3FBBC0]">$</sup><span className="font-bold text-4xl text-[#3FBBC0]">49</span> <span className="text-[#BABABA] text-lg">/ month</span></p>
               <p className="mb-4 text-center">Aida dere</p>
               <p className="mb-4 text-center">Nec feugiat nisl</p>
               <p className="mb-4 text-center">Nulla at volutpat dola</p>
               <p className="mb-4 text-center">Pharetra massa</p>
-              <p className="mb-4 text-center">Massa ultricies mi</p>
+              <p className="mb-4 text-center line-through text-[#cccccc]">Massa ultricies mi</p>
             </div>
             <div className="h-[75] bg-[#F8F8F8] flex items-center justify-center">
               <button className="px-8 py-2 font-bold bg bg-[#3FBBC0] text-center text-white rounded-md">Buy Now</button>
