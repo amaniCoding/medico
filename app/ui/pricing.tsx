@@ -21,7 +21,7 @@ export default function Pricing() {
               <p className="mb-4 text-center">Pharetra massa</p>
               <p className="mb-4 text-center line-through text-[#cccccc]">Massa ultricies mi</p>
             </div>
-            <div className="h-[75] bg-[#F8F8F8] flex items-center justify-center">
+            <div className="h-[75] p-3 bg-[#F8F8F8] flex items-center justify-center">
               <button className="px-8 py-2 font-bold bg bg-[#3FBBC0] text-center text-white rounded-md">Buy Now</button>
             </div>
           </div>
@@ -37,7 +37,7 @@ export default function Pricing() {
               <p className="mb-4 text-center">Pharetra massa</p>
               <p className="mb-4 text-center line-through text-[#cccccc]">Massa ultricies mi</p>
             </div>
-            <div className="h-[75] bg-[#F8F8F8] flex items-center justify-center">
+            <div className="h-[75] p-3 bg-[#F8F8F8] flex items-center justify-center">
               <button className="px-8 py-2 font-bold bg bg-[#3FBBC0] text-center text-white rounded-md">Buy Now</button>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function Pricing() {
               <p className="mb-4 text-center">Pharetra massa</p>
               <p className="mb-4 text-center line-through text-[#cccccc]">Massa ultricies mi</p>
             </div>
-            <div className="h-[75] bg-[#F8F8F8] flex items-center justify-center">
+            <div className="h-[75] p-3 bg-[#F8F8F8] flex items-center justify-center">
               <button className="px-8 py-2 font-bold bg bg-[#3FBBC0] text-center text-white rounded-md">Buy Now</button>
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function Pricing() {
               <p className="mb-4 text-center">Pharetra massa</p>
               <p className="mb-4 text-center line-through text-[#cccccc]">Massa ultricies mi</p>
             </div>
-            <div className="h-[75] bg-[#F8F8F8] flex items-center justify-center">
+            <div className="h-[75] p-3 bg-[#F8F8F8] flex items-center justify-center">
               <button className="px-8 py-2 font-bold bg bg-[#3FBBC0] text-center text-white rounded-md">Buy Now</button>
             </div>
           </div>

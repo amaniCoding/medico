@@ -82,25 +82,25 @@ export default function NavBar() {
             <div className="md:hidden block fixed top-0 left-0 bottom-0 right-0 bg-black/60 z-10 overflow-hidden">
               <FaXmark className="w-8 h-8 absolute top-5 right-5 cursor-pointer" color="white" onClick={() => { setIsShowMobileMenu(false) }} />
               <div className="max-w-screen-sm h-screen mx-5 mt-16 bg-white rounded-xl p-6">
-                <div className="flex flex-col space-y-6 items-center s">
-                  <Link className="text-lg hover:text-[#3FBBC0] font-semibold text-gray-400"
+                <div className="flex flex-col space-y-6 items-start s">
+                  <Link className="hover:text-[#3FBBC0] hover:font-semibold font-semibold font-semibold text-gray-400"
                     href={`/`}
                   >Home</Link>
-                  <Link className="text-lg hover:text-[#3FBBC0] font-semibold text-gray-400"
+                  <Link className="hover:text-[#3FBBC0] hover:font-semibold font-semibold text-gray-400"
                     href={`/`}
-                  >ABOUT</Link>
-                  <Link className="text-lg hover:text-[#3FBBC0] font-semibold text-gray-400"
+                  >About</Link>
+                  <Link className="hover:text-[#3FBBC0] hover:font-semibold font-semibold text-gray-400"
                     href={`/`}
-                  >SERVICES</Link>
-                  <Link className="text-lg hover:text-[#3FBBC0] font-semibold text-gray-400"
+                  >Services</Link>
+                  <Link className="hover:text-[#3FBBC0] hover:font-semibold font-semibold text-gray-400"
                     href={`/`}
-                  >DEPARTMENTS</Link>
-                  <Link className="text-lg hover:text-[#3FBBC0] font-semibold text-gray-400"
+                  >Departments</Link>
+                  <Link className="hover:text-[#3FBBC0] hover:font-semibold font-semibold text-gray-400"
                     href={`/`}
-                  >DOCTORS</Link>
-                  <Link className="text-lg hover:text-[#3FBBC0] font-semibold text-gray-400"
+                  >Doctors</Link>
+                  <Link className="hover:text-[#3FBBC0] hover:font-semibold font-semibold text-gray-400"
                     href={`/`}
-                  >CONTACT</Link>
+                  >Contact</Link>
                 </div>
               </div>
             </div>

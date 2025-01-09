@@ -15,8 +15,8 @@ export default function Contact() {
         <p className="my-4 text-center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         <div className="grid grid-cols-12 gap-6 p-6 shadow-gray-50">
           <div className="md:col-span-6 col-span-12">
-            <div className="grid grid-cols-12 gap-3 shadow-xl">
-              <div className="col-span-12 shadow-md">
+            <div className="grid grid-cols-12 gap-3">
+              <div className="col-span-12 shadow-lg">
                 <div className="p-6 w- flex flex-col space-y-4 items-center justify-center">
                   <div className="w-14 h-14 rounded-full border-2 border-[#3FBBC0] flex items-center justify-center border-dotted"><HiOutlineLocationMarker className="w-8 h-8 stroke-[#3FBBC0]" /></div>
 
@@ -26,7 +26,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="grid grid-cols-12 gap-6 mt-7">
-              <div className="md:col-span-6 col-span-12 shadow-xl">
+              <div className="md:col-span-6 col-span-12 shadow-lg">
                 <div className="p-6 w- flex flex-col space-y-2 items-center justify-center">
                   <div className="w-14 h-14 rounded-full border-2 border-[#3FBBC0] flex items-center justify-center border-dotted">
                     <HiOutlineMail className="w-8 h-8 stroke-[#3FBBC0]" />
@@ -36,7 +36,7 @@ export default function Contact() {
                   <span>contact@example.com</span>
                 </div>
               </div>
-              <div className="md:col-span-6 col-span-12 shadow-xl">
+              <div className="md:col-span-6 col-span-12 shadow-lg">
                 <div className="p-6 w- flex flex-col space-y-2 items-center justify-center">
                   <div className="w-14 h-14 rounded-full border-2 border-[#3FBBC0] flex items-center justify-center border-dotted">
                     <FiPhoneCall className="w-8 h-8 stroke-[#3FBBC0]" />
