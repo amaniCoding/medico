@@ -4,7 +4,7 @@ import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa"
 import { TiSocialFacebook } from "react-icons/ti"
 export default function Doctors() {
   return (
-    <section className="py-14 bg-[#f7fcfc]">
+    <section className="p-3 bg-[#f7fcfc]">
       <div className="max-w-[1150px] mx-auto">
       <p className="text-3xl font-bold p-3 text-center uppercase">Doctors</p>
         <div className="flex items-center justify-center">

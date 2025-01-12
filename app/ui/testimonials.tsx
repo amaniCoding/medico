@@ -41,7 +41,7 @@ export default function Testimonials() {
     ]
   };
   return (
-    <section className="p-6">
+    <section className="p-3 mb-10">
       <div className="max-w-[1150px] mx-auto testimonials">
         <p className="text-3xl font-bold pb-3 text-center uppercase">Testimonials</p>
         <div className="flex items-center justify-center">
@@ -54,7 +54,7 @@ export default function Testimonials() {
         <div className="slider-container">
           <Slider {...settings}>
 
-            <div className="h-[388px] md:p-0 p-5">
+            <div className="min-h-[320px] md:p-0 p-5">
               <div className="relative p-6 bg-[#F7FCFC]">
                 <p className="italic text-lg text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, omnis sed modi aut eos ab illo totam officiis eum obcaecati necessitatibus reiciendis quod excepturi quos quae autem et similique deserunt.</p>
 
@@ -73,7 +73,7 @@ export default function Testimonials() {
               </div>
 
             </div>
-            <div className="h-[388px] md:p-0 p-5">
+            <div className="min-h-[320px] md:p-0 p-5">
               <div className="relative p-6 bg-[#F7FCFC]">
                 <p className="italic text-lg text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, omnis sed modi aut eos ab illo totam officiis eum obcaecati necessitatibus reiciendis quod excepturi quos quae autem et similique deserunt.</p>
 
@@ -92,7 +92,7 @@ export default function Testimonials() {
               </div>
 
             </div>
-            <div className="h-[388px] md:p-0 p-5">
+            <div className="min-h-[320px] md:p-0 p-5">
               <div className="relative p-6 bg-[#F7FCFC]">
                 <p className="italic text-lg text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, omnis sed modi aut eos ab illo totam officiis eum obcaecati necessitatibus reiciendis quod excepturi quos quae autem et similique deserunt.</p>
 
@@ -111,7 +111,7 @@ export default function Testimonials() {
               </div>
 
             </div>
-            <div className="h-[388px] md:p-0 p-5">
+            <div className="min-h-[320px] md:p-0 p-5">
               <div className="relative p-6 bg-[#F7FCFC]">
                 <p className="italic text-lg text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, omnis sed modi aut eos ab illo totam officiis eum obcaecati necessitatibus reiciendis quod excepturi quos quae autem et similique deserunt.</p>
 
@@ -130,7 +130,7 @@ export default function Testimonials() {
               </div>
 
             </div>
-            <div className="h-[388px] md:p-0 p-5">
+            <div className="min-h-[320px] md:p-0 p-5">
               <div className="relative p-6 bg-[#F7FCFC]">
                 <p className="italic text-lg text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, omnis sed modi aut eos ab illo totam officiis eum obcaecati necessitatibus reiciendis quod excepturi quos quae autem et similique deserunt.</p>
 

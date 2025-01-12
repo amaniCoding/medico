@@ -2,42 +2,63 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaPhone } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
-import TopNavBar from "./top-nav-bar";
+import { IoMdTime } from "react-icons/io";
 export default function NavBar() {
   const [isShowMobileMenu, setIsShowMobileMenu] = useState<boolean>(false);
   const navRef = useRef<HTMLDivElement>(null);
-  const myFunction = () => {
-      navRef.current!.style.transition = 'all 0.5s';
-      window.addEventListener("scroll", function () {
-      
-        if (this.document.body.scrollTop > 25 || this.document.documentElement.scrollTop > 25) {
-          navRef.current!.style.transform = "translateY(-60%)";
-  
-        } else {
-          navRef.current!.style.transform = "translateY(0)";
-  
-        }
-      });
-    }
-  
-     useEffect(() => {
-        myFunction();
-        return () => {
-          myFunction();
-        }
-      }, [])
+  const topBarnavref = useRef<HTMLDivElement>(null);
+
   const showMobileMenu = () => {
     setIsShowMobileMenu(true);
   }
+  
+  const myFunction = () => {
+    navRef.current!.style.transition = 'all 0.5s';
+    topBarnavref.current!.style.transition = 'all 0.5s';
+    window.addEventListener("scroll", function () {
+      const scrollH = topBarnavref.current?.scrollHeight;
+      if (this.document.body.scrollTop > 25 || this.document.documentElement.scrollTop > 25) {
+        
+        topBarnavref.current!.style.transform = "translateY(-100%)";
+        navRef.current!.style.transform = `translateY(-${scrollH}px)`;
+
+      } else {
+        navRef.current!.style.transform = "translateY(0)";
+        topBarnavref.current!.style.transform = "translateY(0)";
+      }
+    });
+  }
+
+  useEffect(() => {
+    myFunction();
+    return () => {
+      myFunction();
+    }
+  }, [])
+  
 
 
   return (
-   
+
     <div className="fixed top-0 right-0 left-0 z-20">
-      <TopNavBar/>
-      <nav className="md:p-4 p-2 bg-white" ref={navRef}>
+
+      <nav className="p-2 bg-[#3FBBC0] md:block hidden" ref={topBarnavref}>
+        <div className="max-w-screen-lg mx-auto">
+          <div className="flex items-center justify-between space-x-3">
+            <div className="flex items-center space-x-2">
+              <IoMdTime className="w-7 h-7" color="white" />
+              <span className="font-semibold text-white">Monday - Saturday, 8AM to 10PM</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <FaPhone className="w-7 h-7" color="white" />
+              <span className="font-semibold text-white">Call us now +1 5589 55488 55</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav className="md:p-4 p-2 bg-white relative" ref={navRef}>
         <div className="max-w-screen-lg mx-auto">
 
           <div className="flex items-center justify-between space-x-3">
@@ -79,11 +100,11 @@ export default function NavBar() {
         </div>
         {
           isShowMobileMenu && (
-            <div className="md:hidden block fixed top-0 left-0 bottom-0 right-0 bg-black/60 z-10 overflow-hidden">
+            <div className="md:hidden block fixed top-0 left-0 bottom-0 right-0 bg-black/60 z-[200] overflow-hidden h-screen">
               <FaXmark className="w-8 h-8 absolute top-5 right-5 cursor-pointer" color="white" onClick={() => { setIsShowMobileMenu(false) }} />
-              <div className="max-w-screen-sm h-screen mx-5 mt-16 bg-white rounded-xl p-6">
-                <div className="flex flex-col space-y-6 items-start s">
-                  <Link className="hover:text-[#3FBBC0] hover:font-semibold font-semibold font-semibold text-gray-400"
+              <div className="max-w-screen-sm mx-5 mt-16 bg-white rounded-xl p-6 h-[70vh]">
+                <div className="flex flex-col space-y-6 items-start ">
+                  <Link className="hover:text-[#3FBBC0] hover:font-semibold font-semibold text-gray-400"
                     href={`/`}
                   >Home</Link>
                   <Link className="hover:text-[#3FBBC0] hover:font-semibold font-semibold text-gray-400"
@@ -107,8 +128,8 @@ export default function NavBar() {
           )
         }
       </nav>
-      
+
     </div>
-      
+
   )
 }

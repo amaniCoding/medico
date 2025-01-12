@@ -3,16 +3,16 @@ import Image from "next/image"
 import { FaRegCheckCircle } from "react-icons/fa"
 export default function AboutUs() {
   return (
-    <section className="py-16">
+    <section className="p-3">
       <div className="max-w-[1150px] mx-auto">
         <p className="text-3xl font-bold pb-3 text-center uppercase">About Us</p>
         <div className="flex items-center justify-center">
           <p className="border-b-[4px] border-b-[#3FBBC0] w-20 text-center"></p>
         </div>
         <p className="mt-3">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        <div className="grid grid-cols-12">
+        <div className="grid grid-cols-12 gap-3">
           <div className="md:col-span-6 col-span-12">
-            <div className="p-5">
+            <div className="p-1">
               <Image
                 alt="Medico developed by Amanuel Ferede in Next.js"
                 src={`/seldom.jpg`}

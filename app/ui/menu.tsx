@@ -3,9 +3,9 @@ import { FaDna, FaEyeDropper, FaHeartbeat, FaTablets } from "react-icons/fa";
 
 export default function Menu() {
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-gray-50 p-3">
       <div className="max-w-[1150px] mx-auto">
-        <div className="grid md:grid-cols-4 grid-cols-1 md:gap-5 gap-10">
+        <div className="grid md:grid-cols-4 grid-cols-1 gap-5">
           <div className="group p-4 rounded-md shadow-lg bg-white relative before:absolute before:content-[' '] before:top-full before:bottom-0 before:left-0 before:right-0 before:bg-[#d9f1f2] hover:before:top-0 before:transition-all before:duration-200 before:ease-in-out hover:before:bg-[#3fbbc0] before:-z-10 z-10 before:rounded-md"
           >
             <div className=""></div>
