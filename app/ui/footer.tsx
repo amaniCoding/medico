@@ -42,28 +42,28 @@ export default function Footer() {
           <div className="">
             <p className="text-xl font-bold mb-3">Useful Links</p>
             <div className="flex flex-col space-y-3">
-              <div className="flex space-x-3">
-                <MdKeyboardArrowRight className="w-4 h-4" />
+              <div className="flex space-x-1 items-center">
+                <MdKeyboardArrowRight className="w-5 h-5" />
                 <span className="w-full">Home</span>
               </div>
-              <div className="flex space-x-3">
-                <MdKeyboardArrowRight className="w-4 h-4" />
+              <div className="flex space-x-1 items-center">
+                <MdKeyboardArrowRight className="w-5 h-5" />
                 <span className="w-full"> About us</span>
               </div>
-              <div className="flex space-x-3">
-                <MdKeyboardArrowRight className="w-4 h-4" />
+              <div className="flex space-x-1 items-center">
+                <MdKeyboardArrowRight className="w-5 h-5" />
                 <span className="w-full">Services</span>
               </div>
-              <div className="flex space-x-3">
-                <MdKeyboardArrowRight className="w-4 h-4" />
+              <div className="flex space-x-1 items-center">
+                <MdKeyboardArrowRight className="w-5 h-5" />
                 <span className="w-full">Home</span>
               </div>
-              <div className="flex space-x-3">
-                <MdKeyboardArrowRight className="w-4 h-4" />
+              <div className="flex space-x-1 items-center">
+                <MdKeyboardArrowRight className="w-5 h-5" />
                 <span className="w-full"> Terms of service</span>
               </div>
-              <div className="flex space-x-3">
-                <MdKeyboardArrowRight className="w-4 h-4" />
+              <div className="flex space-x-1 items-center">
+                <MdKeyboardArrowRight className="w-5 h-5" />
                 <span className="w-full">Privacy policy</span>
               </div>
             </div>
@@ -72,24 +72,24 @@ export default function Footer() {
             
             <p className="text-xl font-bold mb-3">Our Services</p>
             <div className="flex flex-col space-y-3">
-              <div className="flex space-x-3">
-                <MdKeyboardArrowRight className="w-4 h-4" />
+              <div className="flex space-x-1 items-center">
+                <MdKeyboardArrowRight className="w-5 h-5" />
                 <span className="w-full">Web Design</span>
               </div>
-              <div className="flex space-x-3">
-                <MdKeyboardArrowRight className="w-4 h-4" />
+              <div className="flex space-x-1 items-center">
+                <MdKeyboardArrowRight className="w-5 h-5" />
                 <span className="w-full">Web Development</span>
               </div>
-              <div className="flex space-x-3">
-                <MdKeyboardArrowRight className="w-4 h-4" />
+              <div className="flex space-x-1 items-center">
+                <MdKeyboardArrowRight className="w-5 h-5" />
                 <span className="w-full">Product Management</span>
               </div>
-              <div className="flex space-x-3">
-                <MdKeyboardArrowRight className="w-4 h-4" />
+              <div className="flex space-x-1 items-center">
+                <MdKeyboardArrowRight className="w-5 h-5" />
                 <span className="w-full">Marketing</span>
               </div>
-              <div className="flex space-x-3">
-                <MdKeyboardArrowRight className="w-4 h-4" />
+              <div className="flex space-x-1 items-center">
+                <MdKeyboardArrowRight className="w-5 h-5" />
                 <span className="w-full"> Graphic Design</span>
               </div>
             </div>
