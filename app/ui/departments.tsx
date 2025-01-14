@@ -56,14 +56,14 @@ export default function Departments() {
                   <div className="felx flex-col space-y-2">
                     <p className="font-bold text-lg text-[#3FBBC0]">{department[activeIndex].name}</p>
                     <div className="grid grid-cols-12 gap-3">
-                      <div className="col-span-5">
+                      <div className="md:col-span-5 col-span-12">
                         <Image
                           src={`/${department[activeIndex].subCat.photo}`}
                           width={0}
                           height={0}
                           sizes="100vh"
                           alt="Amanuel Ferede Fullstack web developer"
-                          className="w-full h-full"
+                          className="w-full h-full object-cover"
                         />
                       </div>
                       <div className="md:col-span-7 col-span-12">

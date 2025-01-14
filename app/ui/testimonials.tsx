@@ -54,7 +54,7 @@ export default function Testimonials() {
         <div className="slider-container">
           <Slider {...settings}>
 
-            <div className="min-h-[320px] md:p-0 p-5">
+            <div className="">
               <div className="relative p-6 bg-[#F7FCFC]">
                 <p className="italic text-lg text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, omnis sed modi aut eos ab illo totam officiis eum obcaecati necessitatibus reiciendis quod excepturi quos quae autem et similique deserunt.</p>
 

@@ -27,7 +27,7 @@ export default function FAQ() {
             faq.map((el, i) => {
               return (
                 <div key={i} className='flex flex-col '>
-                  <div className='flex space-x-0 items-center cursor-pointer group mt-7' onClick={() => {handelClick(i)}}>
+                  <div className='flex space-x-0 cursor-pointer group mt-7' onClick={() => {handelClick(i)}}>
                     
                     {
                       currentIndexNumber === i ? showCollapse === true ? <MdKeyboardArrowUp className='w-7 h-7 group-hover:text-[#3fbbc0]' /> : <MdKeyboardArrowDown className='w-7 h-7 group-hover:text-[#3fbbc0]' /> : <MdKeyboardArrowDown className='w-7 h-7 group-hover:text-[#3fbbc0]' />

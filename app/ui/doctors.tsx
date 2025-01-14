@@ -37,7 +37,7 @@ export default function Doctors() {
           <div className="">
             <div className="w-full relative group">
               <Image
-                src={`/d1.jpg`}
+                src={`/d2.jpg`}
                 width={0}
                 height={0}
                 sizes="100vh"
@@ -59,7 +59,7 @@ export default function Doctors() {
           <div className="">
             <div className="w-full relative group">
               <Image
-                src={`/d2.jpg`}
+                src={`/d3.jpg`}
                 width={0}
                 height={0}
                 sizes="100vh"
@@ -81,7 +81,7 @@ export default function Doctors() {
           <div className="">
             <div className="w-full relative group">
               <Image
-                src={`/d3.jpg`}
+                src={`/d4.jpg`}
                 width={0}
                 height={0}
                 sizes="100vh"
