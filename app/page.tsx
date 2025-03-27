@@ -1,5 +1,4 @@
 
-import { Fa0 } from "react-icons/fa6";
 import AboutUs from "./ui/aboutus";
 import Caroucel from "./ui/carousel";
 import Counter from "./ui/counter";

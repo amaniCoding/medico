@@ -10,7 +10,7 @@ export default function Menu() {
           >
             <div className=""></div>
             <div className="flex flex-col space-y-2">
-              <FaHeartbeat className=" w-12 h-12 group-hover:stroke-white" color="#3FBBC0" />
+              <FaHeartbeat className=" w-12 h-12 group-hover:fill-white" color="#3FBBC0" />
               <span className="font-bold group-hover:text-white">Lorem Ipsum</span>
               <span className="group-hover:text-white">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</span>
             </div>
@@ -19,7 +19,7 @@ export default function Menu() {
           >
             <div className="absolute top-full -z-10 bottom-0 left-0 right-0 bg-[#3fbbc0] group-hover:hover:top-0"></div>
             <div className="flex flex-col space-y-2">
-              <FaTablets className="w-12 h-12 group-hover:text-white" color="#3FBBC0" />
+              <FaTablets className="w-12 h-12 group-hover:fill-white" color="#3FBBC0" />
               <span className="font-bold group-hover:text-white">Lorem Ipsum</span>
               <span className="group-hover:text-white">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</span>
             </div>
@@ -28,7 +28,7 @@ export default function Menu() {
           >
             <div className="absolute top-full -z-10 bottom-0 left-0 right-0 bg-[#3fbbc0] group-hover:hover:top-0"></div>
             <div className="flex flex-col space-y-2">
-              <FaEyeDropper className="w-12 h-12 group-hover:text-white" color="#3FBBC0" />
+              <FaEyeDropper className="w-12 h-12 group-hover:fill-white" color="#3FBBC0" />
               <span className="font-bold group-hover:text-white">Lorem Ipsum</span>
               <span className="group-hover:text-white">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</span>
             </div>
@@ -37,7 +37,7 @@ export default function Menu() {
           >
             <div className="absolute top-full -z-10 bottom-0 left-0 right-0 bg-[#3fbbc0] group-hover:hover:top-0"></div>
             <div className="flex flex-col space-y-2">
-              <FaDna className="w-12 h-12 group-hover:text-white" color="#3FBBC0" />
+              <FaDna className="w-12 h-12 group-hover:fill-white" color="#3FBBC0" />
               <span className="font-bold group-hover:text-white">Lorem Ipsum</span>
               <span className="group-hover:text-white">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</span>
             </div>

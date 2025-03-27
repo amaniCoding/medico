@@ -28,6 +28,11 @@ body {
 margin: 4px 4px !important;
 }
 
+.hover-icon:hover {
+  fill: white !important;
+  color: white !important;
+}
+
 
 
 
