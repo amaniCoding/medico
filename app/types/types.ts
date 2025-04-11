@@ -15,4 +15,5 @@ export type Department = {
 export type Faq = {
   menu: string;
   subMenu: string;
+  isCollapsed: boolean;
 }

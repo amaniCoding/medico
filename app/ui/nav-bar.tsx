@@ -13,6 +13,16 @@ export default function NavBar() {
   const showMobileMenu = () => {
     setIsShowMobileMenu(true);
   }
+
+  const hadelScroll = (e: React.MouseEvent<HTMLElement>, name: string) => {
+    e.preventDefault()
+    window.scrollTo({
+        // @ts-expect-error: Object is possibly 'null'.
+        top: document.querySelector(`#${name}`).offsetTop - 70,
+        behavior: "smooth"
+    });
+    setIsShowMobileMenu(false);
+}
   
   const myFunction = () => {
     navRef.current!.style.transition = 'all 0.5s';
@@ -63,37 +73,39 @@ export default function NavBar() {
 
           <div className="flex items-center justify-between space-x-3">
             <div className="flex items-center space-x-2">
+              <Link href={`/`}>
               <Image src={`/logo.png`}
                 width={160}
                 height={160}
                 alt="Medico developed by Amanuel Ferede"
                 className="rounded-full"
               />
+              </Link>
               <span className="font-bold text-white">MEDICIO</span>
             </div>
             <div className="flex items-center space-x-6">
               <div className="md:flex items-center space-x-6 hidden">
                 <Link className="font-semibold text-gray-400 text-sm"
-                  href={`/`}
+                  href={`#`} onClick={(e) => {hadelScroll(e, "home")}}
                 >Home</Link>
                 <Link className="font-semibold text-gray-400 text-sm"
-                  href={`/`}
+                  href={`#`} onClick={(e) => {hadelScroll(e, "about")}}
                 >ABOUT</Link>
                 <Link className="font-semibold text-gray-400 text-sm"
-                  href={`/`}
+                  href={`#`} onClick={(e) => {hadelScroll(e, "services")}}
                 >SERVICES</Link>
                 <Link className="font-semibold text-gray-400 text-sm"
-                  href={`/`}
+                  href={`#`} onClick={(e) => {hadelScroll(e, "departments")}}
                 >DEPARTMENTS</Link>
                 <Link className="font-semibold text-gray-400 text-sm"
-                  href={`/`}
+                  href={`#`} onClick={(e) => {hadelScroll(e, "doctors")}}
                 >DOCTORS</Link>
                 <Link className="font-semibold text-gray-400 text-sm"
-                  href={`/`}
+                  href={`#`} onClick={(e) => {hadelScroll(e, "contact")}}
                 >CONTACT</Link>
               </div>
-              <button className="md:block hidden py-2 px-6 text-center bg-[#3FBBC0] text-white rounded-md">Make an apointment</button>
-              <button className="md:hidden block py-1 px-6 text-center bg-[#3FBBC0] text-white rounded-md">Apointment</button>
+              <button className="md:block hidden py-2 px-6 text-center bg-[#3FBBC0] text-white rounded-md" onClick={(e) => {hadelScroll(e, "appo")}}>Make an apointment</button>
+              <button className="md:hidden block py-1 px-6 text-center bg-[#3FBBC0] text-white rounded-md" onClick={(e) => {hadelScroll(e, "appo")}}>Apointment</button>
               <FaBars className="w-7 h-7 md:hidden block cursor-pointer" onClick={showMobileMenu} />
             </div>
           </div>
@@ -104,24 +116,24 @@ export default function NavBar() {
               <FaXmark className="w-8 h-8 absolute top-5 right-5 cursor-pointer" color="white" onClick={() => { setIsShowMobileMenu(false) }} />
               <div className="max-w-screen-sm mx-5 mt-16 bg-white rounded-xl p-6 h-[70vh]">
                 <div className="flex flex-col space-y-6 items-start ">
-                  <Link className="hover:text-[#3FBBC0] hover:font-semibold font-semibold text-gray-400"
-                    href={`/`}
-                  >Home</Link>
-                  <Link className="hover:text-[#3FBBC0] hover:font-semibold font-semibold text-gray-400"
-                    href={`/`}
-                  >About</Link>
-                  <Link className="hover:text-[#3FBBC0] hover:font-semibold font-semibold text-gray-400"
-                    href={`/`}
-                  >Services</Link>
-                  <Link className="hover:text-[#3FBBC0] hover:font-semibold font-semibold text-gray-400"
-                    href={`/`}
-                  >Departments</Link>
-                  <Link className="hover:text-[#3FBBC0] hover:font-semibold font-semibold text-gray-400"
-                    href={`/`}
-                  >Doctors</Link>
-                  <Link className="hover:text-[#3FBBC0] hover:font-semibold font-semibold text-gray-400"
-                    href={`/`}
-                  >Contact</Link>
+                <Link className="font-semibold text-gray-400 text-sm"
+                  href={`#`} onClick={(e) => {hadelScroll(e, "home")}}
+                >Home</Link>
+                <Link className="font-semibold text-gray-400 text-sm"
+                  href={`#`} onClick={(e) => {hadelScroll(e, "about")}}
+                >ABOUT</Link>
+                <Link className="font-semibold text-gray-400 text-sm"
+                  href={`#`} onClick={(e) => {hadelScroll(e, "services")}}
+                >SERVICES</Link>
+                <Link className="font-semibold text-gray-400 text-sm"
+                  href={`#`} onClick={(e) => {hadelScroll(e, "departments")}}
+                >DEPARTMENTS</Link>
+                <Link className="font-semibold text-gray-400 text-sm"
+                  href={`#`} onClick={(e) => {hadelScroll(e, "doctors")}}
+                >DOCTORS</Link>
+                <Link className="font-semibold text-gray-400 text-sm"
+                  href={`#`} onClick={(e) => {hadelScroll(e, "contact")}}
+                >CONTACT</Link>
                 </div>
               </div>
             </div>
