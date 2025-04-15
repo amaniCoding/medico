@@ -8,7 +8,7 @@ export default function MakeApp() {
       <div className="max-w-[1150px] mx-auto">
         <motion.div
           initial={{ translateY: 110, opacity: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           whileInView={{ translateY: 0, opacity: 1 }}
           transition={{ duration: 0.5, easings: easeIn }}
         >
@@ -20,7 +20,7 @@ export default function MakeApp() {
         </motion.div>
         <motion.div
           initial={{ translateY: 110, opacity: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           whileInView={{ translateY: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.6, easings: easeIn }}
         >

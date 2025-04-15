@@ -1,6 +1,5 @@
 'use client'
 import { easeIn, motion } from "motion/react"
-import Image from "next/image"
 import { FaHeartPulse, FaWheelchair } from "react-icons/fa6"
 import { GiBrainFreeze } from "react-icons/gi"
 import { LiaTabletsSolid } from "react-icons/lia"
@@ -11,7 +10,7 @@ export function Services() {
       <div className="max-w-[1150px] mx-auto">
         <motion.div
           initial={{ translateY: 110, opacity: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           whileInView={{ translateY: 0, opacity: 1 }}
           transition={{ duration: 0.5, easings: easeIn }}
         >
@@ -24,7 +23,7 @@ export function Services() {
         <div className="grid md:grid-cols-3 grid-cols-1">
           <motion.div
             initial={{ translateY: 110, opacity: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.1, easings: easeIn }}
           >
@@ -40,7 +39,7 @@ export function Services() {
           </motion.div>
           <motion.div
             initial={{ translateY: 110, opacity: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2, easings: easeIn }}
           >
@@ -56,7 +55,7 @@ export function Services() {
           </motion.div>
           <motion.div
             initial={{ translateY: 110, opacity: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3, easings: easeIn }}
           >
@@ -72,7 +71,7 @@ export function Services() {
           </motion.div>
           <motion.div
             initial={{ translateY: 110, opacity: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4, easings: easeIn }}
           >
@@ -88,7 +87,7 @@ export function Services() {
           </motion.div>
           <motion.div
             initial={{ translateY: 110, opacity: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5, easings: easeIn }}
           >
@@ -104,7 +103,7 @@ export function Services() {
           </motion.div>
           <motion.div
             initial={{ translateY: 110, opacity: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6, easings: easeIn }}
           >

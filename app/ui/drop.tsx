@@ -15,7 +15,7 @@ export default function Drop() {
             <div className="p-4">
               <motion.div
                 initial={{ translateY: 100, opacity: 0 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 whileInView={{ translateY: 0, opacity: 1 }}
                 transition={{ duration: 0.5, easings: easeIn }}
               >
@@ -30,7 +30,7 @@ export default function Drop() {
 
               <motion.div
                 initial={{ translateY: 100, opacity: 0 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 whileInView={{ translateY: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.1, easings: easeIn }}
               >
@@ -45,7 +45,7 @@ export default function Drop() {
 
               <motion.div
                 initial={{ translateY: 100, opacity: 0 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 whileInView={{ translateY: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.2, easings: easeIn }}
               >
@@ -59,7 +59,7 @@ export default function Drop() {
               </motion.div>
               <motion.div
                 initial={{ translateY: 100, opacity: 0 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 whileInView={{ translateY: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.3, easings: easeIn }}
               >
@@ -77,7 +77,7 @@ export default function Drop() {
             <div>
               <motion.div
                 initial={{ translateY: 130, opacity: 0 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
                 whileInView={{ translateY: 0, opacity: 1 }}
                 transition={{ duration: 0.5, easings: easeIn }}
               >

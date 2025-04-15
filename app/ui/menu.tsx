@@ -1,5 +1,5 @@
 'use client'
-import { animate, easeIn, easeInOut } from "motion";
+import { easeIn } from "motion";
 import { motion } from "motion/react";
 import { FaDna, FaEyeDropper, FaHeartbeat, FaTablets } from "react-icons/fa";
 
@@ -10,7 +10,7 @@ export default function Menu() {
         <div className="grid md:grid-cols-4 grid-cols-1 gap-5">
           <motion.div
             initial={{ translateY: 80, opacity: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.5, easings: easeIn }}
           >
@@ -27,7 +27,7 @@ export default function Menu() {
 
           <motion.div
             initial={{ translateY: 80, opacity: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.1, easings: easeIn }}
           >
@@ -44,7 +44,7 @@ export default function Menu() {
 
           <motion.div
             initial={{ translateY: 80, opacity: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2, easings: easeIn }}
           >
@@ -60,7 +60,7 @@ export default function Menu() {
           </motion.div>
           <motion.div
             initial={{ translateY: 80, opacity: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3, easings: easeIn }}
           >

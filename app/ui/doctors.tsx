@@ -9,7 +9,7 @@ export default function Doctors() {
       <div className="max-w-[1150px] mx-auto">
         <motion.div
           initial={{ translateY: 80, opacity: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           whileInView={{ translateY: 0, opacity: 1 }}
           transition={{ duration: 0.5, easings: easeIn }}
         >
@@ -22,7 +22,7 @@ export default function Doctors() {
         <div className="grid md:grid-cols-4 grid-cols-1 gap-7">
           <motion.div
             initial={{ translateY: 110, opacity: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.5, easings: easeIn }}
           >
@@ -51,7 +51,7 @@ export default function Doctors() {
           </motion.div>
           <motion.div
             initial={{ translateY: 110, opacity: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.1, easings: easeIn }}
           >
@@ -80,7 +80,7 @@ export default function Doctors() {
           </motion.div>
           <motion.div
             initial={{ translateY: 110, opacity: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2, easings: easeIn }}
           >
@@ -109,7 +109,7 @@ export default function Doctors() {
           </motion.div>
           <motion.div
             initial={{ translateY: 110, opacity: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             whileInView={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3, easings: easeIn }}
           >

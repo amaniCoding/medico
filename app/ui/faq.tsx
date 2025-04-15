@@ -24,7 +24,7 @@ export default function FAQ() {
       <div className="max-w-[1000px] mx-auto testimonials">
         <motion.div
           initial={{ translateY: 80, opacity: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           whileInView={{ translateY: 0, opacity: 1 }}
           transition={{ duration: 0.5, easings: easeIn }}
         >
@@ -36,7 +36,7 @@ export default function FAQ() {
         </motion.div>
         <motion.div
           initial={{ translateY: 110, opacity: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           whileInView={{ translateY: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3, easings: easeIn }}
         >

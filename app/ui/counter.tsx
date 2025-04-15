@@ -12,7 +12,7 @@ export default function Counter() {
       <div className="max-w-[1150px] mx-auto">
         <motion.div
           initial={{ translateY: 100, opacity: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           whileInView={{ translateY: 0, opacity: 1 }}
           transition={{ duration: 0.5, easings: easeIn }}
         >
